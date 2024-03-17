@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+  margin:0;
+}
+
+body{
+    background: #F6E3BA ;
+    direction: rtl;
+    margin: 0;
+    font-family: tahoma;
+}
+
+.container{
+    max-width: 1300px;
+  }
+  
+  header{
+    background: #cfb284e1;
+    min-height: 80px;
+    background: ;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 100px;
+  }
+  
+
+  li a{
+    text-decoration: none;
+    color:#817158;
+    font-size: 1.5em;
+    transform: 1s;
+  }
+  
+  header .nav a:hover{
+    color: #FFFDE7;
+  }
+
+  nav a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background:  #817158;
+    transition: 1s;
+    margin-left: 0;
+    margin: 0 auto;
+    
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+nav a::before{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background:  #817158;
+    transition: 1s;
+    margin: 0 auto;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+footer{
+  background: #cfb2847b;
+  bottom: 0;
+  padding: 2px;
+}
+
+.box{
+  height: 100px;
+}
+
+.icon{
+  font-size: 2.5em;
+  transition: 0.5s;
+  color: #817158;
+}
+
+.icon:hover{
+  color: #FFFDE7;
+  font-size: 3.5em;
+}
+
+.course a{
+  color:#817158;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.course a:hover{
+  color:#473e2f;
+  font-weight: bolder;
+}
+.logo a{
+  color:#473e2f;
+  text-decoration: none;
+  text-align: left;
+  font-family: great vibes;
+  font-size: 5em;
+}
+
+h2{
+    color: #7a6a4f;
+}
+h5{
+    color: #7a6a4f;
+}
+
+.box-c{
+  background-size: cover;
+  background-position: center center;
+  height: 70vh;
+  width: 45%;
+  border-radius: 10px;
+}
+
+.box-c a{
+  color: #7a6a4f;
+  background: #fffde7bf;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 25px 0px 10px 0px;
+  font-size: 2.5em;
+  transform: 1s;
+}
+
+.box-c a:hover{
+  color:#473e2f;
+  font-size: 3em;
+}
+
+.container h2{
+  font-weight: bolder;
+  
+}
+
+.fb{
+  background: #FFFDE7;
+  border-radius: 10%;
+  padding: 25px;
+}
+
+
+.light_box{
+    /* גורם לדיב לעקוב אחרינו */
+    position: fixed;
+    top:0;
+    left:0;
+    /* רוחב וגובה בדיוק של החלון */
+    width:100%;
+    height: 100%;
+    /* רקע שחור שקוף */
+    background: rgba(248, 136, 136, 0.705);
+    /* שתמיג יהיה הכי קדימה */
+    z-index: 999;
+    /* כדי לגרום לבוקס הפנימי להיות ממוקם באמצע */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+    box-sizing: border-box;
+  }
+  
+  /* .inside_box - הריבוע הלבן שהתמונה ,טקסט וכפתור
+  נמצאים בו */
+  .light_box .inside_box{
+    background: white; 
+    padding:8px;
+    max-width: 600px;
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+  
+  .light_box .inside_box img{
+    max-width: 600px;
+    width:98%;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+  
+  .light_box .inside_box p{
+    color:grey;
+    font-size: 2em;
+  }
+  
+  
+  .light_box .inside_box button{
+    background: skyblue;
+    border:none;
+    padding:12px 24px;
+    border-radius: 12px;
+  }
+
+  .box-l{
+    border: #F6E3BA solid 2px;
+    border-radius: 40px;
+  }
+
+  iframe{
+    margin-bottom: 35px;
+  }
+
+  /* גודל מסך 992 פיקסלים רוחב ומטה */
+  @media (max-width:992px){
+    header .row nav {
+      display: none;
+      position: absolute;
+        background: #cfb284f8;
+      color:#817158;
+      width:60%;
+      right:0;
+      top: 75px;
+
+    }
+  
+    header .row nav ul {
+      display: block;
+      text-align: center;
+    }
+  
+    header .row nav ul li{
+      padding:8px;
+      border-bottom: 2px solid #7a6a4f;
+    }
+  
+
+  
+    header .row .burger i{
+      /* מגדיל את האייקון של הבורגר */
+      font-size: 2.5em;
+    }
+
+.small-pic{
+    width: 100%;
+    background-position: right;
+}
+
+
+
+
+
+
+
+  }
+  
+  @media (max-width:768px) {
+
+    header {
+      min-height: 50px;
+    }
+    header .logo{
+      width:80%;
+    }
+    .vert{
+      background-size: cover;
+      background-position: center center;
+      height: 50vh;
+      width: 100%;
+      border-radius: 20px;
+      opacity: 0.2;
+    }
+    .vert-text{
+      display: block;
+      width: 100%;
+    }
+
+    footer img{
+      width: 100%;
+    }
+    footer .box3{
+      width: 100%;
+      text-align: center;
+      margin: 5px auto;
+    }
+
+    .box-c{
+
+      height: 70vh;
+      width: 100%;
+      border-radius: 10px;
+    }
+    iframe{
+      width: 100%;
+    }
+  }
+  
+  /* עוד מדיה למסך קטן יותר אפילו */
+  /* מה יקרה שהמסך קטן מ390 פיקסלים */
+  @media (max-width:390px){
+
+    header .row nav {
+      top:80px;
+    }
+    
+    header {
+      min-height: 50px;
+    }
+  
+    header .logo{
+      width:80%;
+    }
+    
+    header .row .burger i{
+      /* מגדיל את האייקון של הבורגר */
+      font-size: 1.5em;
+    }
+  
+    header .row nav .search input{
+      max-width:100px;
+      /* width:50%; */
+    }
+
+    footer .container{
+      display: block;
+    }
+  }
