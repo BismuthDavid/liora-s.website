@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+  margin:0;
+}
+
+body{
+    background: #F6E3BA ;
+    direction: rtl;
+    margin: 0;
+    font-family: tahoma;
+    color: #473e2f;
+}
+
+.container{
+    max-width: 1300px;
+  }
+  
+  header{
+    background: #cfb284e1;
+    min-height: 80px;
+    background: ;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 100px;
+  }
+  
+
+  li a{
+    text-decoration: none;
+    color:#817158;
+    font-size: 1.5em;
+    transform: 1s;
+  }
+  
+  header .nav a:hover{
+    color: #FFFDE7;
+  }
+
+  nav a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background:  #817158;
+    transition: 1s;
+    margin-left: 0;
+    margin: 0 auto;
+    
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+nav a::before{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background:  #817158;
+    transition: 1s;
+    margin: 0 auto;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+footer{
+  background: #cfb2847b;
+
+  bottom: 0;
+  padding: 2px;
+}
+
+.box{
+  height: 100px;
+}
+
+.icon{
+  font-size: 2.5em;
+  transition: 0.5s;
+  color: #817158;
+}
+
+.icon:hover{
+  color: #FFFDE7;
+  font-size: 3.5em;
+}
+
+.course a{
+  color:#817158;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.course a:hover{
+  color:#473e2f;
+  font-weight: bolder;
+}
+.logo a{
+  color:#473e2f;
+  text-decoration: none;
+  text-align: left;
+  font-family: great vibes;
+  font-size: 5em;
+}
+
+.strip{
+  margin: 0 auto;
+}
+
+.f1{
+  margin: 10% auto;
+}
+
+
+
+
+
+
+form {
+   max-width: 1000px;
+   text-align: center;
+   margin: 20px auto;
+  
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+    border-radius:8px;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+    box-shadow:(0 1px 1px rgba(black, 0.1));
+     resize: none;
+    
+    &:focus {
+    box-shadow:(0 0px 2px rgba($red, 1)!important);
+    }
+  }
+  
+  #input-submit {
+     color: #FFFDE7; 
+     background: #473e2f;
+     cursor: pointer;
+    
+    &:hover {
+  box-shadow:(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 126px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+  /* גודל מסך 992 פיקסלים רוחב ומטה */
+  @media (max-width:992px){
+    header .row nav {
+      display: none;
+      position: absolute;
+        background: #cfb284f8;
+      color:#817158;
+      width:60%;
+      right:0;
+      top: 75px;
+
+    }
+  
+    header .row nav ul {
+      display: block;
+      text-align: center;
+    }
+  
+    header .row nav ul li{
+      padding:8px;
+      border-bottom: 2px solid #7a6a4f;
+    }
+  
+
+  
+    header .row .burger i{
+      /* מגדיל את האייקון של הבורגר */
+      font-size: 2.5em;
+    }
+
+.small-pic{
+    width: 100%;
+    background-position: right;
+}
+
+
+
+
+
+
+
+  }
+  
+  @media (max-width:768px) {
+
+    header {
+      min-height: 50px;
+    }
+    header .logo{
+      width:80%;
+    }
+    .vert{
+      background-size: cover;
+      background-position: center center;
+      height: 50vh;
+      width: 100%;
+      border-radius: 20px;
+      opacity: 0.2;
+    }
+    .vert-text{
+      display: block;
+      width: 100%;
+    }
+
+    footer img{
+      width: 100%;
+    }
+    footer .box3{
+      width: 100%;
+      text-align: center;
+      margin: 5px auto;
+    }
+
+
+  }
+  
+  /* עוד מדיה למסך קטן יותר אפילו */
+  /* מה יקרה שהמסך קטן מ390 פיקסלים */
+  @media (max-width:390px){
+
+    header .row nav {
+      top:80px;
+    }
+    
+    header {
+      min-height: 50px;
+    }
+  
+    header .logo{
+      width:80%;
+    }
+    
+    header .row .burger i{
+      /* מגדיל את האייקון של הבורגר */
+      font-size: 1.5em;
+    }
+  
+    header .row nav .search input{
+      max-width:100px;
+      /* width:50%; */
+    }
+
+    footer .container{
+      display: block;
+    }
+  }
