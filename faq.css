@@ -71,9 +71,10 @@ nav a:hover::before{
 
 footer{
   background: #cfb2847b;
-  position: static;
-  bottom: 0;
-  padding: 2px;
+
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 15px;
 }
 
 .box{
@@ -105,11 +106,14 @@ footer{
   color:#473e2f;
   text-decoration: none;
   text-align: left;
-  font-family: great vibes;
-  font-size: 5em;
+  font-family: "Beau Rivage", cursive;
+  font-size: 7em;
+  font-weight: bolder;
 }
 
-
+.accordion{
+  margin-bottom: 15%;
+}
 
 /* אקורדיון שפתוח */
 .accordion-item .accordion-header .accordion-button{

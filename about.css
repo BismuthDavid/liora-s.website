@@ -70,8 +70,9 @@ nav a:hover::before{
 
 footer{
 background: #cfb2847b;
-bottom: 0;
-padding: 2px;
+margin-top: 20px;
+margin-bottom: 0;
+padding: 15px;
 }
 
 .box{
@@ -99,12 +100,14 @@ text-decoration: none;
 color:#473e2f;
 font-weight: bolder;
 }
+
 .logo a{
-color:#473e2f;
-text-decoration: none;
-text-align: left;
-font-family: great vibes;
-font-size: 5em;
+  color:#473e2f;
+  text-decoration: none;
+  text-align: left;
+  font-family: "Beau Rivage", cursive;
+  font-size: 7em;
+  font-weight: bolder;
 }
 
 .pic1{

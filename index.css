@@ -70,8 +70,9 @@ nav a:hover::before{
 
 footer{
   background: #cfb2847b;
-  bottom: 0;
-  padding: 2px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .box{
@@ -103,8 +104,9 @@ footer{
   color:#473e2f;
   text-decoration: none;
   text-align: left;
-  font-family: great vibes;
-  font-size: 5em;
+  font-family: "Beau Rivage", cursive;
+  font-size: 7em;
+  font-weight: bolder;
 }
 
 .f2{
@@ -366,5 +368,4 @@ main a:hover::before{
       display: block;
     }
   }
-
 
